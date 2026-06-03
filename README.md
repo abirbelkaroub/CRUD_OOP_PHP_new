@@ -6,6 +6,7 @@ A simple CRUD To-Do application built with PHP and MySQL using a simple MVC arch
 - Display all tasks
 - Update an existing task
 - Delete a task
+- Track creation and update time of tasks
 ---
 ## Installation
 1. Clone the repository
@@ -23,7 +24,7 @@ The application follows a simple MVC architecture:
 User submits a task
 → Controller receives the request
 → Model inserts data into the database
-→ Database stores the task
+→ Database stores the task **with creation timestamp**
 
 ### Read (Display)
 View requests all tasks  
@@ -36,7 +37,7 @@ User clicks update on a specific task
 → Task ID is sent through the URL
 → Controller retrieves task data
 → User edits the task
-→ Model updates the database
+→ Model updates the database **with creation timestamp**
 
 ### Delete
 User clicks delete on a task
